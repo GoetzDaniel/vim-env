@@ -8,11 +8,26 @@ else
 	echo ".vimrc did not exist before!"
 fi
 
-# Delete the .vim folder
-if [ -e "$HOME/.vim/" ];then
-    sudo rm -r $HOME/.vim/
-	echo ".vim folder is deleted now!"
+# Delete the colors folder
+if [ -e "$HOME/.vim/colors/" ];then
+    sudo rm -r $HOME/.vim/colors/
+	echo "colors folder is deleted now!"
 else
-	echo ".vim folder did not exist before!"
+	echo "colors folder did not exist before!"
 fi
 
+# Delete the bundle folder
+if [ -e "$HOME/.vim/bundle/" ];then
+    sudo rm -r $HOME/.vim/bundle/
+	echo "bundle folder is deleted now!"
+else
+	echo "bundle folder did not exist before!"
+fi
+
+# Delete the snippets folder
+if [ -e "$HOME/.vim/snippets/" ];then
+    sudo rm -r $HOME/.vim/snippets/
+	echo "snippets folder is deleted now!"
+else
+	echo "snippets folder did not exist before!"
+fi
