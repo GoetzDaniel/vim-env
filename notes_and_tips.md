@@ -27,7 +27,7 @@
 * upper case marks work for the whole system.
 * ```m + [any key]```` to set a mark.
 * ```' + [key]``` to go to the line marked by [key].
-* ```\` + [key]``` to go to the exact point marked by [key].
+* ``` ` + [key]``` to go to the exact point marked by [key].
 * ```:marks``` to show a list of all marks.
 * ```d + ' + m``` delete all until mark.
 
