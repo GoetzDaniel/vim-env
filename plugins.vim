@@ -18,8 +18,8 @@ Plugin 'arnaud-lb/vim-php-namespace'
 Plugin 'ervandew/supertab'
 Plugin 'stephpy/vim-php-cs-fixer'
 Plugin 'tobyS/vmustache'
-Plugin 'tobyS/pdv'
-Plugin 'SirVer/ultisnips'
+"Plugin 'tobyS/pdv'
+"Plugin 'SirVer/ultisnips'
 
  
 " All of your Plugins must be added before the following line
