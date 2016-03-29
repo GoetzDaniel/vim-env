@@ -1,6 +1,7 @@
 # vim-env
 
 My personal config of vim following the screencast serie [Vim Mastery](https://laracasts.com/series/vim-mastery).
+Thanks to [morrizon](https://github.com/morrizon/vim-env) for the inspiration.
 
 See also my [Notes and Tips](notes_and_tips.md) for my collection of vim related Notes.
 
