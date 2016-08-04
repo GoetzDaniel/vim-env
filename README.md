@@ -4,41 +4,23 @@ My personal config of vim following the screencast serie [Vim Mastery](https://l
 Thanks to [morrizon](https://github.com/morrizon/vim-env) for the inspiration.
 
 See also my [Notes and Tips](notes_and_tips.md) for my collection of vim related Notes.
+If you want to do a manual installation check the [manual installation](manual_installation.md) page. Else follow the installation process like it is described here.
 
 ### Installation
 
-* Clone into your ~/.vim folder.
-* Add the following line to your ~/.vimrc file:
+* Clone this Repository into your ~/.vim folder.
 ```
-so ~/.vim/vim-env/config.vim
+git clone git@gitlab.com:danielg1/vim-env.git ~/.vim/vim-env
 ```
-* Download the [vim-atom-dark](https://github.com/gosukiwi/vim-atom-dark) colorscheme into the folder ~/.vim/colors
-
-### Plugins
-
-#### Vundle
-* In order to manage your plugins you need to git clone Vundle with the following command
+* Run the setup script, that is included in the Repository
 ```
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+bash ~/.vim/vim-env/setup.sh
 ```
-
-#### Ctags
-* Install [ctags](http://ctags.sourceforge.net/). On Linux you can use apt-get on Mac you can use [Homebrew](http://brew.sh/)
+* If you want to undo the setup just run the script to delete the published setup again
 ```
-sudo apt-get install ctags
+bash ~/.vim/vim-env/delete_published_setup.sh
+``` 
+* If you want to add additional plugins in order to download them you have to run the following command from within vim:
 ```
-* To use ctags in a Project you have to add all the files (or you can also exclude some)
-```
-Ctags -R --exclude vendors
-```
-* Use the option --exclude if you want to exclude a specific folder from your tags
-* Put the created 'Tags'-file on your gitignore 
-
-#### vim-php-cs-fixer
-* You neet to install the [php-cs-fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer) in order to use the vim Plugin
-
-#### ultisnips
-* If you want to use ultisnips with vim lower than 7.4 you have to use the version 3.0 therefore run:
-```
-git co 3.0
+:PluginInstall
 ```
