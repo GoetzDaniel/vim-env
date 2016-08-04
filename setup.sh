@@ -25,11 +25,21 @@ else
 	echo "Colors folder was created!"
 fi
 
+# Install wget
+
+sudo apt-get install wget
+
 # Download vim-atom-dark-256 theme
 if [ -e "$HOME/.vim/colors/atom-dark-256.vim" ];then
-	echo "atom-dark theme already downloaded before!"
+	echo "atom-dark-256 theme already downloaded before!"
 else
 	wget https://raw.githubusercontent.com/gosukiwi/vim-atom-dark/master/colors/atom-dark-256.vim -O $HOME/.vim/colors/atom-dark-256.vim
+	echo "atom dark 256 theme was downloaded now!"
+fi
+if [ -e "$HOME/.vim/colors/atom-dark.vim" ];then
+	echo "atom-dark theme already downloaded before!"
+else
+	wget https://raw.githubusercontent.com/gosukiwi/vim-atom-dark/master/colors/atom-dark.vim -O $HOME/.vim/colors/atom-dark.vim
 	echo "atom dark theme was downloaded now!"
 fi
 
@@ -41,3 +51,10 @@ else
 	echo "Link to snippet folder was created!"
 fi
 
+# Install Vundle
+
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+# Install all plugins
+
+vim +PluginInstall +qall
