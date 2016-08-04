@@ -26,8 +26,8 @@ fi
 
 # Delete the snippets folder
 if [ -e "$HOME/.vim/snippets/" ];then
-    sudo rm -r $HOME/.vim/snippets/
-	echo "snippets folder is deleted now!"
+    sudo rm $HOME/.vim/snippets
+	echo "snippets link is deleted now!"
 else
-	echo "snippets folder did not exist before!"
+	echo "snippets link did not exist before!"
 fi
