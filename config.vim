@@ -73,7 +73,7 @@ nmap <C-H> <C-W><C-H>
 "Switch to the split on the right with ctrl+l
 nmap <C-L> <C-W><C-L>
 
-"expand current window, make them same size again with ctrl+w and =
+"expand current window with ctrl+e (to make them same size again use ctrl+w and =)
 nmap <C-E> :vertical res<CR>:res<CR>
 
 
