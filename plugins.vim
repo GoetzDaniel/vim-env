@@ -18,6 +18,8 @@ Plugin 'arnaud-lb/vim-php-namespace'
 Plugin 'ervandew/supertab'
 Plugin 'stephpy/vim-php-cs-fixer'
 Plugin 'tobyS/vmustache'
+Plugin 'rdolgushin/groovy.vim'
+
 "Plugin 'tobyS/pdv'
 "Plugin 'SirVer/ultisnips'
 
